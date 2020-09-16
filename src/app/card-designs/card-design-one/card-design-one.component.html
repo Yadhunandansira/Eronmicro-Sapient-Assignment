@@ -1,0 +1,27 @@
+<div class="card " >
+
+    <div class="imge-holder">
+        <img class="card-img-top" [src]="data.links.mission_patch" alt="Card image cap">
+    </div>
+
+    <div class="card-body">
+        <h5 class="card-title">{{data.mission_name}}#{{data.flight_number}}</h5>
+        <span class="keyname">Mission Ids:</span>
+        <ul style="margin: 0px;">
+            <li class="valuename" *ngFor="let ids of data.mission_id">{{ids}}</li>
+        </ul>
+        <div>
+            <span class="keyname">Launch Year: </span><span class="valuename">{{data.launch_year}}</span>
+        </div>
+        <div>
+            <span class="keyname">Successful Launch: </span><span
+                class="valuename">{{data.launch_success}}</span>
+
+        </div>
+        <div>
+            <span class="keyname">Successful Landing: </span><span
+                class="valuename">{{data.launch_landing}}</span>
+
+        </div>
+    </div>
+</div>
